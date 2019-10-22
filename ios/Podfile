@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'OneLoginDemo' do
-  # Pods for OneLoginDemo
+target 'OneLoginRN' do
+  # Pods for OneLoginRN
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -34,7 +34,7 @@ target 'OneLoginDemo' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'OneLoginDemoTests' do
+  target 'OneLoginRNTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -42,10 +42,10 @@ target 'OneLoginDemo' do
   use_native_modules!
 end
 
-target 'OneLoginDemo-tvOS' do
-  # Pods for OneLoginDemo-tvOS
+target 'OneLoginRN-tvOS' do
+  # Pods for OneLoginRN-tvOS
 
-  target 'OneLoginDemo-tvOSTests' do
+  target 'OneLoginRN-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
